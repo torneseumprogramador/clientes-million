@@ -2,12 +2,12 @@
 ---
 ## Estrutura de dados
 ```
-Tesouro:{
+Cliente:{
   nome: "",
-  ir: boolean,
-  pais: "",
-  preoupos: boolean,
-  vencimento: Date,
+  sobrenome: "",
+  cpf: "",
+  senha: "",
+  login: ""
   }
   ```
 ---
