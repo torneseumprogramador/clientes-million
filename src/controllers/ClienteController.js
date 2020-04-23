@@ -55,7 +55,8 @@ const ClienteController = {
 
   change: async (req, res, next) => {
     if (req.headers.token === TOKEN) {
-      const { nome, sobrenome, cpf, senha, login, _id } = req.body
+      const { nome, sobrenome, cpf, senha, login} = req.body
+      const {_id} = req.params
 
       try {
         await Cliente.findOneAndUpdate(

@@ -31,7 +31,7 @@ it ('Deveria criar um novo cliente', async () => {
 
 it ('Deveria atualizar um novo cliente', async () => {
     const oldclienteMillion = await ClientsMillion.create({nome:"TESTE DE NOME",sobrenome:"TESTE DE SOBRENOME",cpf:"123456789",senha:"12345",login:"TESTE_DE_LOGIN"})
-    const clienteMillion = await ClientsMillion.update(oldclienteMillion)
+    const clienteMillion = await ClientsMillion.findByIdAndUpdate(oldclienteMillion._id, {nome: "Joel", sobrenome: "Jota", cpf: "22222222222", senha: "123", login: "joeljota"})
     expect(clienteMillion).toBeDefined
 })
 
