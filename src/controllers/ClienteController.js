@@ -23,8 +23,6 @@ const ClienteController = {
   },
 
   login: async (req, res, next) => {
-    
-
     if (req.headers.token === TOKEN) {
       try {
         const { login, senha } = req.body
